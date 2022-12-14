@@ -13,11 +13,19 @@ public class Main {
         String spam = input.nextLine();
         System.out.println("How many times would you like it to spam?");
         int times = input.nextInt();
+        String answer = " ";
+        answer(spam, times);
+    }
 
+    /**
+     * produces the answer
+     * @param spams user input for word they want to spam
+     * @param time how many times they want the input to spam
+     */
+    public static void answer(String spams, int time) {
         int count = 0;
-        MainMethod mySpam = new MainMethod(spam, times);
-
-        while (count != times) {
+        MainMethod mySpam = new MainMethod(spams, time);
+        while (count != time && spams.contains(" ") || count != time && !spams.contains(" ")) {
             mySpam.printSpam();
             count += 1;
         }
