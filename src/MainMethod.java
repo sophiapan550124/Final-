@@ -7,7 +7,7 @@ public class MainMethod {
         this.times = times;
     }
 
-    public String theSpam() {
-        return spam;
+    public void printSpam() {
+        System.out.println(spam + " ");
     }
 }

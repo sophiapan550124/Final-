@@ -8,8 +8,10 @@ public class Main {
         int times = input.nextInt();
 
         int count = 0;
+        MainMethod mySpam = new MainMethod(spam, times);
+
         while (count != times) {
-            System.out.print(spam + " ");
+            mySpam.printSpam();
             count += 1;
         }
     }
