@@ -1,5 +1,12 @@
+/**
+ * Final Project - Spam Generator
+ * @author SPan
+ */
 import java.util.Scanner;
 public class Main {
+    /**
+     * main method that takes user input and performs a task
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("What would you like to spam?");
